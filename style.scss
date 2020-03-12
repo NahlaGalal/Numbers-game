@@ -1,0 +1,74 @@
+body {
+  height: calc(100vh - 32px);
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  h1 {
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .controls {
+      margin-right: 24px;
+      display: flex;
+      flex-direction: column;
+      button {
+        margin-bottom: 16px;
+        width: 136px;
+        height: 48px;
+        border-radius: 10px;
+        border: none;
+        font-weight: 900;
+        background-color: #ddd;
+        color: #111;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all ease-in-out 0.4s;
+        &:hover {
+          box-shadow: 0 3px 3px #010101;
+        }
+      }
+    }
+    .game {
+      border: 1px solid #9a9a9a;
+      width: 467px;
+      height: calc(100vh - 86px);
+      overflow-y: scroll;
+      font-size: 0;
+      button {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        border: none;
+        background-color: #111;
+        font-size: 16px;
+        font-family: "Lato", sans-serif;
+        cursor: pointer;
+        &.one-nine {
+          color: #f00;
+        }
+        &.two-eight {
+          color: #00f;
+        }
+        &.three-seven {
+          color: #ff0;
+        }
+        &.four-six {
+          color: #0f0;
+        }
+        &.five-five {
+          color: #f0f;
+        }
+        &.active {
+          background-color: #445;
+        }
+        &.hover {
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+}
